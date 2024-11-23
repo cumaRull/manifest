@@ -24,7 +24,7 @@
   <project path="art" name="art" groups="pdk" remote="derp" />
   <project path="bionic" name="bionic" groups="pdk" remote="derp" />
   <project path="development" name="development" groups="developers,pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="manifest" name="manifest" remote="derp" />
+  <project path="manifest" name="manifest" remote="derp" revision="15-pixel" />
 
   <!-- Bootable -->
   <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk" remote="derp" />
@@ -75,8 +75,8 @@
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="derp" />
   <project path="external/zstd" name="external_zstd" remote="derp" />
 
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="derp" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" revision="15-pixel" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="derp" revision="15-pixel" />
   <project path="frameworks/derpfest" name="frameworks_derpfest" remote="derp" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="derp" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="derp" />
@@ -175,7 +175,7 @@
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="derp" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="derp" revision="15-pixel" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="derp" />
@@ -217,15 +217,15 @@
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/derp" name="vendor_derp" remote="derp">
+  <project path="vendor/derp" name="vendor_derp" remote="derp" revision="15-pixel">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp" />
   <project path="vendor/google/prebuilt" name="DerpFest/vendor_google_prebuilt" remote="gitlab" revision="15" />
   <project path="vendor/google/gms" name="DerpFest/vendor_google_gms" remote="gitlab" revision="15" clone-depth="1" />
-  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="derp" clone-depth="1" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="derp" revision="15-pixel" clone-depth="1" />
   <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="derp" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="derp" revision="15-pixel" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="derp" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,kailua-audio" remote="derp" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" groups="qcom,qssi" remote="derp" />
